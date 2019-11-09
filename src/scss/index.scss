@@ -1,0 +1,17 @@
+@import "./bootstrap/_index.scss";
+@import "./_colors.scss";
+@import "./utils.scss";
+@import "./_fonts.scss";
+
+body {
+  margin: 0;
+  font-family: "Montserrat-regular",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

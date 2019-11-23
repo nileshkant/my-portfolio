@@ -7153,8 +7153,71 @@ a.text-dark:hover, a.text-dark:focus {
 .fs-30 {
   font-size: 30px; }
 
+.fs-36 {
+  font-size: 36px; }
+
 .fs-50 {
   font-size: 50px; }
+
+.btn-fill {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+
+.btn-fill:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  color: #fff; }
+
+.btn-fill:focus {
+  outline: none; }
+
+.btn-fill.color-primary {
+  background-image: linear-gradient(to right, #fc6076, #E96F94);
+  box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75); }
+
+.btn-fill-outline {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fc6076;
+  cursor: pointer;
+  padding: 0;
+  height: 55px;
+  line-height: 52px;
+  text-align: center;
+  background-size: 300% 100%;
+  background: transparent;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  border: 2px solid #fc6076; }
+
+.btn-fill-outline:hover {
+  background-image: linear-gradient(to right, #fc6076, #E96F94);
+  box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  color: #fff; }
+
+.btn-fill-outline:focus {
+  outline: none; }
 
 body {
   margin: 0;

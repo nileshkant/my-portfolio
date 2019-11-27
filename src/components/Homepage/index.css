@@ -2,7 +2,9 @@
   background-color: #f3f4fb; }
 
 .fullViewHeight {
-  min-height: 100vh; }
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: stretch; }
 
 .floatingButtons {
   bottom: 100px;

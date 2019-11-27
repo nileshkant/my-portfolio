@@ -27,18 +27,18 @@ const Section1 = () => {
             </div>
           </div>
           <div className="row my-4">
-            <div className="col-md-4 col-6">
-              <button type="button" className="btn btn-fill color-primary btn-block">
+            {/* <div className="col-md-4 col-6">
+              <button type="button" className="btn btn-fill-outline color-primary btn-block">
                 Hire Me
               </button>
-            </div>
+            </div> */}
             <div className="col-md-4 col-6">
               <a
                 href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 download
-                className="btn btn-fill-outline color-primary btn-block"
+                className="btn btn-fill color-primary btn-block lh-43"
               >
                 Download CV
               </a>

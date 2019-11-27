@@ -54,9 +54,9 @@ const Section2 = () => {
             return (
               <div className="col-md-6 col-12 my-4">
                 <div className="row">
-                  <i className={`${tech.icon} col-3 align-self-center fs-50 text-center`} />
+                  <i className={`${tech.icon} col-md-3 col-2 align-self-center fs-50 text-center px-0`} />
                   {/* <img src={tech.icon} alt={tech.title} className="col-3 align-self-center" /> */}
-                  <div className="col-9">
+                  <div className="col-md-9 col-10">
                     <div className="row">
                       <div className="col-8 fs-20 colorVoilet text-uppercase">
                         {tech.title}

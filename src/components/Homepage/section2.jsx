@@ -1,39 +1,46 @@
 import React from 'react';
-import react from '../../assets/images/react.png';
-import javascript from '../../assets/images/javascript.png';
-import sass from '../../assets/images/sass.png';
 
 const SpecializeIn = [
   {
-    icon: react,
+    icon: 'devicon-react-original colored',
     title: 'React.Js',
-    experience: '2 Years 1 Month',
-    description: 'React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.'
+    experience: '2Y - 1M',
+    rating: 90,
+    description: `React makes it painless to create interactive UIs.
+                  Design simple views for each state in your application,
+                  and React will efficiently update and render just the right components when your data changes.`
   },
   {
-    icon: javascript,
+    icon: 'devicon-javascript-plain colored',
     title: 'Javascript',
-    experience: '2 Years 1 Month',
-    description: 'JavaScript® (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it\'s used in many non- browser environments as well.It is a prototype - based, multi - paradigm scripting language that is dynamic, and supports object - oriented, imperative, and functional programming styles.'
+    experience: '2Y - 1M',
+    rating: 70,
+    description: `JavaScript® (often shortened to JS) is a lightweight,
+                  interpreted, object-oriented language with first-class functions,
+                  and is best known as the scripting language for Web pages.`
   },
   {
-    icon: sass,
+    icon: 'devicon-sass-original colored',
     title: 'SASS',
-    experience: '2 Years 1 Month',
-    description: 'Sass is a CSS preprocessor, which adds special features such as variables, nested rules and mixins (sometimes referred to as syntactic sugar) into regular CSS. '
+    experience: '2Y - 1M',
+    rating: 70,
+    description: `Sass is a CSS preprocessor, which adds special features such as variables,
+                  nested rules and mixins (sometimes referred to as syntactic sugar) into regular CSS.`
   },
   {
-    icon: react,
+    icon: 'devicon-react-original colored',
     title: 'React Native',
-    experience: '6 Months',
-    description: 'React Native combines the best parts of native development with React, a best-in-class JavaScript library for building user interfaces.'
+    experience: '6M',
+    rating: 80,
+    description: `React Native combines the best parts of native development with React,
+                  a best-in-class JavaScript library for building user interfaces.`
   },
 ];
 
 const Section2 = () => {
   return (
     <section>
-      <div className="container pb-5">
+      <div className="container p-5 bg-white">
         <div className="row my-5">
           <div className="col-12 text-center fs-20 colorRed text-uppercase">
             What I do?
@@ -47,16 +54,24 @@ const Section2 = () => {
             return (
               <div className="col-md-6 col-12 my-4">
                 <div className="row">
-                  <img src={tech.icon} alt={tech.title} className="col-3 align-self-center" />
+                  <i className={`${tech.icon} col-3 align-self-center fs-50 text-center`} />
+                  {/* <img src={tech.icon} alt={tech.title} className="col-3 align-self-center" /> */}
                   <div className="col-9">
                     <div className="row">
-                      <div className="col-8 fs-20 colorVoilet text-uppercase my-3">
+                      <div className="col-8 fs-20 colorVoilet text-uppercase">
                         {tech.title}
                       </div>
-                      <div className="col-4 fs-12 colorRed text-uppercase align-self-center">
+                      <div className="col-4 fs-12 colorRed text-uppercase align-self-center text-right">
                         {tech.experience}
                       </div>
-                      <div className="col-12 mont-300">
+                      <div className="col-12 my-3">
+                        <div className="meter">
+                          <span style={{ width: `${tech.rating}%` }}>
+                            <span className="progress" />
+                          </span>
+                        </div>
+                      </div>
+                      <div className="col-12 mont-300 text-justify">
                         {tech.description}
                       </div>
                     </div>

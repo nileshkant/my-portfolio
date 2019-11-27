@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'portfolio';
+  src:  url('../assets/fonts/basic-icon/portfolio.eot?ka0ct0');
+  src:  url('../assets/fonts/basic-icon/portfolio.eot?ka0ct0#iefix') format('embedded-opentype'),
+    url('../assets/fonts/basic-icon/portfolio.ttf?ka0ct0') format('truetype'),
+    url('../assets/fonts/basic-icon/portfolio.woff?ka0ct0') format('woff'),
+    url('../assets/fonts/basic-icon/portfolio.svg?ka0ct0#portfolio') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'portfolio' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconleft-arrow-angle:before {
+  content: "\e900";
+}
+.iconright-arrow-angle:before {
+  content: "\e901";
+}

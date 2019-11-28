@@ -1,5 +1,7 @@
 .homeBackgroud {
-  background-color: #f3f4fb; }
+  background-color: #f3f4fb;
+  background-image: url(../../assets/images/pattern.svg);
+  background-repeat: repeat; }
 
 .fullViewHeight {
   min-height: -webkit-fill-available;

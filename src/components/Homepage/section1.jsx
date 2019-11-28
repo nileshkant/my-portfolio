@@ -1,5 +1,5 @@
 import React from 'react';
-import character from '../../assets/images/character.png';
+import character from '../../assets/images/person.svg';
 import resume from '../../assets/images/Resume.pdf';
 
 

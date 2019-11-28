@@ -12,7 +12,7 @@ const projectDetails = [
                   unsure what to order.`,
     startDate: '10/2019',
     endDate: null,
-    techUsed: ['React js - 16.10+', 'Redux', 'Redux thunk', 'Bootstrap 4+', 'SASS'],
+    techUsed: ['React js - 16.10+', 'Redux', 'Redux thunk', 'JavaScript', 'Bootstrap 4+', 'SASS'],
     features: ['Apple Pay', 'QR scanner', 'Cart']
   },
   {
@@ -24,7 +24,7 @@ const projectDetails = [
                   includes video lectures, PDF documents, Interactive animations and lot more...`,
     startDate: '10/2018',
     endDate: '09/2019',
-    techUsed: ['React js - 16.8+', 'Redux', 'Redux thunk', 'Bootstrap 4+', 'SASS', 'Video js'],
+    techUsed: ['React js - 16.8+', 'Redux', 'Redux thunk', 'JavaScript', 'Bootstrap 4+', 'SASS', 'Video js'],
     features: ['Customised Video Player', 'Notes', 'Forum', 'Bookmarks']
   },
   {
@@ -38,7 +38,7 @@ const projectDetails = [
                   HNIs and Institutional Investors, to everyday retail clients.`,
     startDate: '10/2017',
     endDate: '09/2018',
-    techUsed: ['React js - 15+', 'Redux', 'Redux thunk', 'Bootstrap 3+', 'SASS', 'Chart js', 'HighCharts', 'D3 Charts'],
+    techUsed: ['React js - 15+', 'Redux', 'Redux thunk', 'JavaScript', 'Bootstrap 3+', 'SASS', 'Chart js', 'HighCharts', 'D3 Charts'],
     features: ['Pan Card Verification', 'BillDesk Payment Gateway Integration', 'Aadhaar Card Verification', 'Complex Chart Implementaion']
   }
 ];

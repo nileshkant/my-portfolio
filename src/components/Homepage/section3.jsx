@@ -75,7 +75,7 @@ const Section3 = () => {
               </div>
             </div>
           </div>
-          <div className={cn('col-12 col-md my-5 bg-white', visible ? 'animated fadeIn' : '')}>
+          <div className={cn('col-12 col-md my-5 bg-white br-5 m-br-0', visible ? 'animated fadeIn' : '')}>
             <div className="row">
               <div className="col-12 text-right px-0 mt-3">
                 <span

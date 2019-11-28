@@ -25,6 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.iconoffice:before {
+  content: "\e902";
+}
+.iconbackpack:before {
+  content: "\e903";
+}
+.iconuniversity:before {
+  content: "\e904";
+}
+.iconschool:before {
+  content: "\e905";
+}
 .iconleft-arrow-angle:before {
   content: "\e900";
 }

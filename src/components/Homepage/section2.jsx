@@ -40,7 +40,7 @@ const SpecializeIn = [
 const Section2 = () => {
   return (
     <section>
-      <div className="container p-5 bg-white">
+      <div className="container p-5 bg-white br-5 m-br-0">
         <div className="row my-5">
           <div className="col-12 text-center fs-20 colorRed text-uppercase">
             What I do?

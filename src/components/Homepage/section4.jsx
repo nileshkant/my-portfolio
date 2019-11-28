@@ -11,7 +11,8 @@ const career = [
     percentage: null,
     cgpa: null,
     branch: null,
-    location: 'Bengaluru / Bangalore'
+    location: 'Bengaluru / Bangalore',
+    icon: 'iconoffice'
   },
   {
     id: 2,
@@ -22,7 +23,8 @@ const career = [
     percentage: 64.8,
     cgpa: null,
     branch: 'Electronics and Communication',
-    location: 'Jaipur'
+    location: 'Jaipur',
+    icon: 'iconuniversity'
   },
   {
     id: 3,
@@ -33,7 +35,8 @@ const career = [
     percentage: 63.8,
     cgpa: null,
     branch: 'PCM',
-    location: 'Patna'
+    location: 'Patna',
+    icon: 'iconschool'
   },
   {
     id: 4,
@@ -44,7 +47,8 @@ const career = [
     percentage: null,
     cgpa: 9.2,
     branch: null,
-    location: 'Danapur Cantt, Patna'
+    location: 'Danapur Cantt, Patna',
+    icon: 'iconbackpack'
   },
 ];
 
@@ -70,7 +74,7 @@ const Section4 = () => {
                 contentArrowStyle={index === 0 ? { borderRight: '7px solid  rgb(240, 94, 138)' } : {}}
                 date={`${expData.from} - ${expData.to || 'Present'}`}
                 iconStyle={index % 2 ? { background: 'rgb(240, 94, 138)', color: '#fff' } : { background: 'rgb(7, 30, 70)', color: '#fff' }}
-                icon={<span className="icon iconright-arrow-angle" />}
+                icon={<span className={`icon ${expData.icon} fs-30 m-fs-20`} />}
               >
                 <h4 className="vertical-timeline-element-title">
                   {expData.organization}

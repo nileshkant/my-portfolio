@@ -7051,6 +7051,13 @@ a.text-dark:hover, a.text-dark:focus {
   overflow-y: hidden;
   overflow-x: visible; }
 
+.br-5 {
+  border-radius: 5px; }
+
+@media only screen and (max-width: 768px) {
+  .m-br-0 {
+    border-radius: 0; } }
+
 .chip {
   display: inline-flex;
   flex-direction: row;
@@ -7236,6 +7243,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 .fs-50 {
   font-size: 50px; }
+
+.ls-3 {
+  letter-spacing: 0.3rem; }
+
+@media only screen and (max-width: 768px) {
+  .m-fs-20 {
+    font-size: 20px; } }
 
 .btn-fill {
   font-size: 16px;
@@ -11242,6 +11256,18 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.iconoffice:before {
+  content: "\e902"; }
+
+.iconbackpack:before {
+  content: "\e903"; }
+
+.iconuniversity:before {
+  content: "\e904"; }
+
+.iconschool:before {
+  content: "\e905"; }
+
 .iconleft-arrow-angle:before {
   content: "\e900"; }
 
@@ -11332,7 +11358,7 @@ a.text-dark:hover, a.text-dark:focus {
   .vertical-timeline--two-columns .vertical-timeline-element-icon {
     width: 60px;
     height: 60px;
-    line-height: 60px;
+    line-height: 73px;
     text-align: center;
     left: 50%;
     margin-left: -30px; } }

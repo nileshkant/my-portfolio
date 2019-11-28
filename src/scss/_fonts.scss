@@ -166,3 +166,13 @@
 .fs-50 {
     font-size: 50px;
 }
+
+.ls-3 {
+  letter-spacing: 0.3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .m-fs-20 {
+    font-size: 20px;
+  }
+}

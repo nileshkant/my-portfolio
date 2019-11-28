@@ -46,13 +46,15 @@ const projectDetails = [
 const Section3 = () => {
   const [slide, setSlide] = useState(0);
   const [visible, setVisible] = useState(false);
+  const [isChanged, setChange] = useState('');
 
   const onVisibilitySensorChange = (isVisible) => {
     if (isVisible) {
-      setVisible(true);
+      setVisible(typeof window.orientation === 'undefined');
     }
   };
   const changeSlide = (data) => {
+    setChange('animated flipInX fast');
     if ((data === 1) && slide < projectDetails.length - 1) setSlide(slide + data);
     if ((data === -1) && slide > 0) setSlide(slide + data);
   };
@@ -61,20 +63,20 @@ const Section3 = () => {
     <VisibilitySensor
       onChange={onVisibilitySensorChange}
     >
-      <section>
-        <div className="container mt-5">
-          <div className="row align-items-center">
-            <div className="col">
-              <div className={cn('row', visible ? 'animated fadeIn' : 'is-hidden')}>
-                <div className="col-12 text-center fs-20 colorRed text-uppercase">
+      <section className="container mt-5">
+        <div className="row align-items-center">
+          <div className="col-12 col-md">
+            <div className={cn('row', visible ? 'animated fadeIn' : '')}>
+              <div className="col-12 text-center fs-20 colorRed text-uppercase">
                   Portfolios
-                </div>
-                <div className="col-12 text-center colorVoilet my-2 fs-36 robo-700 text-uppercase">
+              </div>
+              <div className="col-12 text-center colorVoilet my-2 fs-36 robo-700 text-uppercase">
                   Latest Projects
-                </div>
               </div>
             </div>
-            <div className={cn('col-md col-12 my-5 bg-white', visible ? 'animated fadeIn' : 'is-hidden')}>
+          </div>
+          <div className={cn('col-12 col-md my-5 bg-white', visible ? 'animated fadeIn' : '')}>
+            <div className="row">
               <div className="col-12 text-right px-0 mt-3">
                 <span
                   role="button"
@@ -93,29 +95,31 @@ const Section3 = () => {
                   className={cn('fs-20 colorRed mx-3 cursor-pointer outline-0 icon iconright-arrow-angle', { colorGrey: slide === projectDetails.length - 1 })}
                 />
               </div>
-              {projectDetails.map((project, index) => {
-                return (
-                  <div key={project.id} className={cn('row p-3 mb-4', slide === index ? 'animated flipInX fast' : 'd-none')}>
-                    <div className="col-12 fs-20 colorRed robo-regular my-2 text-uppercase">
-                      {project.projectName}
+              <div className="col-12">
+                {projectDetails.map((project, index) => {
+                  return (
+                    <div key={project.id} className={cn('row p-3 mb-4', slide === index ? isChanged : 'd-none')}>
+                      <div className="col-12 fs-20 colorRed robo-regular my-2 text-uppercase">
+                        {project.projectName}
+                      </div>
+                      <div className="col-12 text-justify mb-3">
+                        {project.description}
+                      </div>
+                      <div className="col-12 text-justify">
+                        {project.techUsed.map((tech) => {
+                          return (
+                            <div className="chip m-2">
+                              <div className="chip-head">{tech.slice(0, 1).toUpperCase()}</div>
+                              <div className="chip-content">{tech}</div>
+                              <div className="chip-close" />
+                            </div>
+                          );
+                        })}
+                      </div>
                     </div>
-                    <div className="col-12 text-justify mb-3">
-                      {project.description}
-                    </div>
-                    <div className="col-12 text-justify">
-                      {project.techUsed.map((tech) => {
-                        return (
-                          <div className="chip m-2">
-                            <div className="chip-head">{tech.slice(0, 1).toUpperCase()}</div>
-                            <div className="chip-content">{tech}</div>
-                            <div className="chip-close" />
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

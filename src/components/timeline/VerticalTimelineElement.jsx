@@ -18,6 +18,7 @@ const VerticalTimelineElement = ({
   iconOnClick,
   visibilitySensorProps,
   dateStyle,
+  animatedType
 }) => {
   const [visible, setVisible] = useState(false);
   const onVisibilitySensorChange = (isVisible) => {
@@ -47,7 +48,7 @@ const VerticalTimelineElement = ({
             style={iconStyle}
             onClick={iconOnClick}
             className={`vertical-timeline-element-icon ${
-              visible ? 'animated fadeIn' : 'is-hidden'
+              visible ? animatedType : 'is-hidden'
             }`}
           >
             {icon}
@@ -56,7 +57,7 @@ const VerticalTimelineElement = ({
           <div
             style={contentStyle}
             className={`vertical-timeline-element-content ${
-              visible ? 'animated fadeIn' : 'is-hidden'
+              visible ? animatedType : 'is-hidden'
             }`}
           >
             <div
@@ -94,6 +95,7 @@ VerticalTimelineElement.propTypes = {
   position: PropTypes.string,
   visibilitySensorProps: PropTypes.shape({}),
   dateStyle: PropTypes.shape({}),
+  animatedType: PropTypes.string,
 };
 
 VerticalTimelineElement.defaultProps = {
@@ -109,7 +111,8 @@ VerticalTimelineElement.defaultProps = {
   position: '',
   iconOnClick: null,
   visibilitySensorProps: { partialVisibility: true, offset: { bottom: 40 } },
-  dateStyle: {color: '#000'}
+  dateStyle: {color: '#000'},
+  animatedType: typeof window.orientation === 'undefined' ? "bounce-in" : "animated fadeIn",
 };
 
 export default VerticalTimelineElement;

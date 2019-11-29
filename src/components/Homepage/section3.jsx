@@ -11,7 +11,7 @@ const projectDetails = [
                   unsure what to order.`,
     startDate: '10/2019',
     endDate: null,
-    techUsed: ['React js - 16.10+', 'Redux', 'Redux thunk', 'JavaScript', 'Bootstrap 4+', 'SASS'],
+    techUsed: ['React-Native', 'React js - 16.10+', 'Redux', 'Redux thunk', 'JavaScript', 'Bootstrap 4+', 'SASS'],
     features: ['Apple Pay', 'QR scanner', 'Cart']
   },
   {

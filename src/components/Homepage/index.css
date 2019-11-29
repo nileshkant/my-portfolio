@@ -3,14 +3,6 @@
   background-image: url(../../assets/images/pattern.svg);
   background-repeat: repeat; }
 
-.fullViewHeight {
-  min-height: -webkit-fill-available;
-  min-height: -moz-available;
-  min-height: stretch; }
-  @supports (-webkit-appearance: none) {
-    .os-android .fullViewHeight {
-      min-height: calc(100vh - 56px); } }
-
 .floatingButtons {
   bottom: 100px;
   right: 0;

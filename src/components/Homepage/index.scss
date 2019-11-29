@@ -4,17 +4,6 @@
  background-repeat: repeat; 
 }
 
-.fullViewHeight {
-  @supports (-webkit-appearance:none) {
-    .os-android & {
-      min-height: calc(100vh - 56px);
-    }
-  }
-    min-height: -webkit-fill-available;
-    min-height: -moz-available;
-    min-height: stretch;
-}
-
 .floatingButtons {
   bottom: 100px;
   right: 0;

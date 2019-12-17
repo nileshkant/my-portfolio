@@ -7,7 +7,7 @@ const Section1 = () => {
   return (
     <section className="container fullViewHeight">
       <div className="row align-items-center fullViewHeight">
-        <div className="col-md-7 col-12">
+        <div className="col-md-7 col-12 mt-5">
           <div className="row">
             <div className="col-12 my-2">
               <h4>

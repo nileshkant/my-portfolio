@@ -6,12 +6,14 @@ import Section4 from './section4';
 import Section5 from './section5';
 import FloatingButton from './floatingButtons';
 import './index.css';
+import LightRope from './lightrope';
 
 const Homepage = () => {
   return (
     <>
       <div className="homeBackgroud">
         <section className="position-relative">
+          <LightRope />
           <Section1 />
           <FloatingButton />
         </section>

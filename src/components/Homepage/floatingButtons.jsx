@@ -14,7 +14,7 @@ const FloatingButton = () => {
 
   return (
     <>
-      <div className="d-none d-md-block floatingButtons position-absolute">
+      <div className="d-none d-lg-block floatingButtons position-absolute">
         <a
           href="https://www.github.com/nileshkant"
           target="_blank"
@@ -49,7 +49,7 @@ const FloatingButton = () => {
         </a>
       </div>
 
-      <div id="circularMenu" className={cn('circular-menu d-block d-md-none d-lg-none', toggle ? 'active' : '')}>
+      <div id="circularMenu" className={cn('circular-menu d-block d-lg-none', toggle ? 'active' : '')}>
 
         <div className="floating-btn" onClick={toggleList} role="button" onKeyDown={toggleList} tabIndex="0">
           <i className="icon iconnetwork" />

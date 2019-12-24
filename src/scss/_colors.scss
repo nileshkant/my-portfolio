@@ -1,25 +1,72 @@
-.colorRed {
-    color: #f05e7b;
+body {
+    .colorRed {
+        color: #f05e7b;
+    }
+
+    .colorVoilet {
+        color: #071e46;
+    }
+
+    .colorGrey {
+        color: #b1b4c4;
+    }
+
+    .colorDarkGrey {
+        color: #3e4459;
+    }
+
+    .colorWhite {
+        color: white;
+    }
+
+    .bg-white-theme {
+        background-color: #fff;
+        background-image: url(../assets/images/pattern-transparent.svg);
+        background-repeat: repeat; 
+    }
+
+    .homeBackgroud {
+        background-color: #f3f4fb;
+        background-image: url(../assets/images/pattern.svg);
+        background-repeat: repeat; 
+    }
+    .bg-grey-theme {
+        background-color: #e9e9ec;
+    }
 }
 
-.colorVoilet {
-    color: #071e46;
-}
+body.dark-mode {
+    .colorRed {
+        color: #f05e7b;
+    }
 
-.colorGrey {
-    color: #b1b4c4;
-}
+    .homeBackgroud {
+        background-color: #121212;
+        background-image: none;
+    }
 
-.colorDarkGrey {
-    color: #3e4459;
-}
+    .colorVoilet {
+        color: #fff;
+    }
 
-.colorWhite {
-    color: white;
-}
+    .bg-grey-theme {
+        background-color: #121212;
+    }
 
-.bg-white {
-    background-color: #fff;
-    background-image: url(../assets/images/pattern-transparent.svg);
-    background-repeat: repeat; 
+    .colorGrey {
+        color: #000;
+    }
+
+    .colorDarkGrey {
+        color: #3e4459;
+    }
+
+    .colorWhite {
+        color: #000;
+    }
+
+    .bg-white-theme {
+        background-color: #1F1A24;
+        background-image: none;
+    }
 }

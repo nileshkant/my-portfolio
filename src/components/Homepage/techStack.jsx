@@ -30,7 +30,7 @@ const TechStack = ({ tech }) => {
                 {tech.experience}
               </div>
               <div className="col-12 my-3">
-                <div className="meter">
+                <div className="meter bg-grey-theme">
                   <span style={{ width: `${tech.rating}%` }}>
                     <span className="progress" />
                   </span>

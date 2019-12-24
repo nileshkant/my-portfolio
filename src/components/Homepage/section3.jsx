@@ -65,7 +65,7 @@ const Section3 = () => {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md my-5 bg-white br-5 m-br-0">
+        <div className="col-12 col-md my-5 bg-white-theme br-5 m-br-0">
           <div className="row">
             <div className="col-12 text-right px-0 mt-3">
               <span
@@ -98,7 +98,7 @@ const Section3 = () => {
                     <div className="col-12 text-justify">
                       {project.techUsed.map((tech) => {
                         return (
-                          <div className="chip m-2">
+                          <div className="chip bg-grey-theme chip-shadow m-2">
                             <div className="chip-head">{tech.slice(0, 1).toUpperCase()}</div>
                             <div className="chip-content">{tech}</div>
                             <div className="chip-close" />

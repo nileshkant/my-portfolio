@@ -53,7 +53,7 @@ const career = [
 ];
 
 
-const Section4 = () => {
+const Section4 = ({ darkMode }) => {
   return (
     <section>
       <div className="container">
@@ -70,8 +70,8 @@ const Section4 = () => {
             return (
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={index === 0 ? { background: 'rgb(240, 94, 138)', color: '#fff' } : {}}
-                contentArrowStyle={index === 0 ? { borderRight: '7px solid  rgb(240, 94, 138)' } : {}}
+                contentStyle={index === 0 ? { background: 'rgb(240, 94, 138)', color: '#fff' } : { background: darkMode ? '#1F1A24' : '#fff', 'box-shadow': '0px 2px 12px 2px #f05d8917' }}
+                contentArrowStyle={index === 0 ? { borderRight: '7px solid  rgb(240, 94, 138)' } : { borderRight: darkMode ? '7px solid #1F1A24' : '7px solid #fff' }}
                 date={`${expData.from} - ${expData.to || 'Present'}`}
                 iconStyle={index % 2 ? { background: 'rgb(240, 94, 138)', color: '#fff' } : { background: 'rgb(7, 30, 70)', color: '#fff' }}
                 icon={<span className={`icon ${expData.icon} fs-30 m-fs-20`} />}

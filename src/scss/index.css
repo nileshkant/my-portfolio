@@ -7020,25 +7020,59 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-.colorRed {
+body .colorRed {
   color: #f05e7b; }
 
-.colorVoilet {
+body .colorVoilet {
   color: #071e46; }
 
-.colorGrey {
+body .colorGrey {
   color: #b1b4c4; }
 
-.colorDarkGrey {
+body .colorDarkGrey {
   color: #3e4459; }
 
-.colorWhite {
+body .colorWhite {
   color: white; }
 
-.bg-white {
+body .bg-white-theme {
   background-color: #fff;
   background-image: url(../assets/images/pattern-transparent.svg);
   background-repeat: repeat; }
+
+body .homeBackgroud {
+  background-color: #f3f4fb;
+  background-image: url(../assets/images/pattern.svg);
+  background-repeat: repeat; }
+
+body .bg-grey-theme {
+  background-color: #e9e9ec; }
+
+body.dark-mode .colorRed {
+  color: #f05e7b; }
+
+body.dark-mode .homeBackgroud {
+  background-color: #121212;
+  background-image: none; }
+
+body.dark-mode .colorVoilet {
+  color: #fff; }
+
+body.dark-mode .bg-grey-theme {
+  background-color: #121212; }
+
+body.dark-mode .colorGrey {
+  color: #000; }
+
+body.dark-mode .colorDarkGrey {
+  color: #3e4459; }
+
+body.dark-mode .colorWhite {
+  color: #000; }
+
+body.dark-mode .bg-white-theme {
+  background-color: #1F1A24;
+  background-image: none; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -7073,7 +7107,6 @@ a.text-dark:hover, a.text-dark:focus {
 .chip {
   display: inline-flex;
   flex-direction: row;
-  background-color: #e5e5e5;
   border: none;
   cursor: default;
   height: 36px;
@@ -11800,3 +11833,18 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
+
+body {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease; }
+
+body.dark-mode {
+  background-color: #232323;
+  color: #dfdfdf; }
+  body.dark-mode .navbar {
+    background-color: #1a1919; }
+  body.dark-mode .dark-mode-toggle > button {
+    color: #999; }
+    body.dark-mode .dark-mode-toggle > button:last-child {
+      color: #ffffff; }

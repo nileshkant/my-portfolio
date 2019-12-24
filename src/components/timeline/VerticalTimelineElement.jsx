@@ -111,7 +111,7 @@ VerticalTimelineElement.defaultProps = {
   position: '',
   iconOnClick: null,
   visibilitySensorProps: { partialVisibility: true, offset: { bottom: 40 } },
-  dateStyle: {color: '#000'},
+  dateStyle: {},
   animatedType: typeof window.orientation === 'undefined' ? "bounce-in" : "animated fadeIn",
 };
 

@@ -14,7 +14,7 @@ const FloatingButton = () => {
 
   return (
     <>
-      <div className="d-none d-lg-block floatingButtons position-absolute">
+      <div className="d-none d-lg-block floatingButtons bg-white-theme position-absolute">
         <a
           href="https://www.github.com/nileshkant"
           target="_blank"

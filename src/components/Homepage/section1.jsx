@@ -3,7 +3,7 @@ import character from '../../assets/images/person.svg';
 import resume from '../../assets/images/Resume.pdf';
 
 
-const Section1 = () => {
+const Section1 = ({ darkMode, setDarkMode }) => {
   return (
     <section className="container fullViewHeight">
       <div className="row align-items-center fullViewHeight">
@@ -32,7 +32,7 @@ const Section1 = () => {
                 Hire Me
               </button>
             </div> */}
-            <div className="col-md-4 col-6">
+            <div className="col-md-4 col-6 mr-auto">
               <a
                 href={resume}
                 target="_blank"
@@ -42,6 +42,27 @@ const Section1 = () => {
               >
                 Download CV
               </a>
+            </div>
+            <div className="col-md-4 col-auto align-self-center">
+              <div className="position-relative">
+                <div className="toggleWrapper">
+                  <input type="checkbox" className="dn" id="dn" onChange={setDarkMode} checked={darkMode} />
+                  {/* eslint-disable-next-line */}
+                  <label htmlFor="dn" className="toggle">
+                    <span className="toggle__handler">
+                      <span className="crater crater--1" />
+                      <span className="crater crater--2" />
+                      <span className="crater crater--3" />
+                    </span>
+                    <span className="star star--1" />
+                    <span className="star star--2" />
+                    <span className="star star--3" />
+                    <span className="star star--4" />
+                    <span className="star star--5" />
+                    <span className="star star--6" />
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -16,15 +16,6 @@ const Homepage = () => {
       <div className="homeBackgroud">
         <section className="position-relative">
           <LightRope />
-          {/* <div className="p-4">
-            <button
-              type="button"
-              className="btn btn-primary"
-              onClick={() => setDarkMode(!darkMode)}
-            >
-              Toggle
-            </button>
-          </div> */}
           <Section1 darkMode={darkMode} setDarkMode={() => setDarkMode((!darkMode))} />
           <FloatingButton />
         </section>

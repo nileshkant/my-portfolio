@@ -7083,6 +7083,9 @@ body.dark-mode .bg-white-theme {
 .lh-43 {
   line-height: 43px; }
 
+.lh-1 {
+  line-height: 1; }
+
 .overflow-y-hidden {
   overflow-y: hidden;
   overflow-x: visible; }

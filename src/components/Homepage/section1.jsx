@@ -19,8 +19,11 @@ const Section1 = ({ darkMode, setDarkMode }) => {
                 </span>
               </h4>
             </div>
-            <div className="col-12 colorVoilet my-2 fs-50 robo-700">
-              FRONTEND DEVELOPER
+            <div className="col-12 colorVoilet my-2 fs-50 robo-700 lh-1">
+              SOFTWARE ENGINEER
+            </div>
+            <div className="col-12 mb-2 robo-regular">
+              JavaScript & Flutter Developer
             </div>
             <div className="col-12 mont-300">
               Playing with UI and focus on code quality

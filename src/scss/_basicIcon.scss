@@ -25,6 +25,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.iconflutter .path1:before {
+  content: "\e939";
+  color: rgb(67, 211, 252);
+}
+.iconflutter .path2:before {
+  content: "\e93a";
+  margin-left: -1em;
+  color: rgb(7, 88, 155);
+}
+.iconflutter .path3:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: rgb(251, 251, 251);
+}
+.iconflutter .path4:before {
+  content: "\e93c";
+  margin-left: -1em;
+  color: rgb(27, 187, 252);
+}
+.iconflutter .path5:before {
+  content: "\e93d";
+  margin-left: -1em;
+  color: rgb(180, 204, 228);
+}
 .iconnetwork:before {
   content: "\e938";
 }

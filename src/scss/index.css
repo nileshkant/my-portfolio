@@ -11304,6 +11304,30 @@ body.dark-mode .bg-white-theme {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.iconflutter .path1:before {
+  content: "\e939";
+  color: #43d3fc; }
+
+.iconflutter .path2:before {
+  content: "\e93a";
+  margin-left: -1em;
+  color: #07589b; }
+
+.iconflutter .path3:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: #fbfbfb; }
+
+.iconflutter .path4:before {
+  content: "\e93c";
+  margin-left: -1em;
+  color: #1bbbfc; }
+
+.iconflutter .path5:before {
+  content: "\e93d";
+  margin-left: -1em;
+  color: #b4cce4; }
+
 .iconnetwork:before {
   content: "\e938"; }
 

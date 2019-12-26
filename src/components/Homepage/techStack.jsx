@@ -20,7 +20,17 @@ const TechStack = ({ tech }) => {
     >
       <div className="col-md-6 col-12 my-4">
         <div className="row">
-          <i className={cn(`${tech.icon} col-md-3 col-2 align-self-center fs-50 text-center px-0`, visible ? 'animated zoomIn fast' : 'invisible')} />
+          <span className={cn(`${tech.icon} col-md-3 col-2 align-self-center fs-50 text-center px-0`, visible ? 'animated zoomIn fast' : 'invisible')}>
+            {tech.path && (
+              <>
+                { [...Array(tech.path)].map((_, index) => {
+                  return (
+                    <span className={`path${index + 1}`} />
+                  );
+                })}
+              </>
+            )}
+          </span>
           <div className="col-md-9 col-10">
             <div className="row">
               <div className="col-8 fs-20 colorVoilet text-uppercase">

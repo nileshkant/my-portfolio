@@ -7,7 +7,7 @@ import Section4 from './section4';
 import Section5 from './section5';
 import FloatingButton from './floatingButtons';
 import './index.css';
-import LightRope from './lightrope';
+// import LightRope from './lightrope';
 
 const Homepage = () => {
   const [darkMode, setDarkMode] = useDarkMode();
@@ -15,7 +15,7 @@ const Homepage = () => {
     <>
       <div className="homeBackgroud">
         <section className="position-relative">
-          <LightRope />
+          {/* <LightRope /> */}
           <Section1 darkMode={darkMode} setDarkMode={() => setDarkMode((!darkMode))} />
           <FloatingButton />
         </section>

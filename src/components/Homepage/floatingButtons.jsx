@@ -12,41 +12,44 @@ const FloatingButton = () => {
     setToggle(!toggle);
   };
 
+  const socialLink = [
+    {
+      name: 'Github', link: 'http://bit.ly/nilesh_git', imgLink: github, icon: 'icon icongithub'
+    },
+    {
+      name: 'Gmail', link: `mailto:nileshkant10@gmail.com?subject=${encodeURIComponent('I like your profile')}`, imgLink: gmail, icon: ''
+    },
+    {
+      name: 'Facebook', link: 'http://bit.ly/nilesh_fb', imgLink: facebook, icon: 'icon iconfacebook'
+    },
+    {
+      name: 'Instagram', link: 'http://bit.ly/nilesh_ig', imgLink: insta, icon: 'icon iconinstagram'
+    },
+    {
+      name: 'Linkedin', link: 'http://bit.ly/nilesh_linkedin', imgLink: '', icon: 'icon iconlinkedin'
+    }
+  ];
+
   return (
     <>
       <div className="d-none d-lg-block floatingButtons bg-white-theme position-absolute">
-        <a
-          href="https://www.github.com/nileshkant"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="align-self-center"
-        >
-          <img src={github} alt="github" height="50" className="mx-3 avatar" />
-        </a>
-        <a
-          href={`mailto:nileshkant10@gmail.com?subject=${encodeURIComponent('I like your profile')}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="align-self-center"
-        >
-          <img src={gmail} alt="gmail" height="50" className="mx-3 avatar" />
-        </a>
-        <a
-          href="https://www.facebook.com/nileshkantofficial"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="align-self-center"
-        >
-          <img src={facebook} alt="facebook" height="50" className="mx-3 avatar" />
-        </a>
-        <a
-          href="https://www.instagram.com/nileshkant"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="align-self-center"
-        >
-          <img src={insta} alt="instagram" height="50" className="mx-3 avatar" />
-        </a>
+        {socialLink.map((links) => {
+          return (
+            <>
+              {links.imgLink && (
+              <a
+                key={links.name}
+                href={links.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="align-self-center"
+              >
+                <img src={links.imgLink} alt={links.name} height="50" className="mx-3 avatar" />
+              </a>
+              )}
+            </>
+          );
+        })}
       </div>
 
       <div id="circularMenu" className={cn('circular-menu d-block d-lg-none', toggle ? 'active' : '')}>
@@ -56,38 +59,23 @@ const FloatingButton = () => {
         </div>
 
         <menu className="items-wrapper">
-          <a
-            href="https://www.github.com/nileshkant"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="menu-item icon icongithub"
-          >
-            <span />
-          </a>
-          <a
-            href="https://www.facebook.com/nileshkantofficial"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="menu-item icon iconfacebook"
-          >
-            <span />
-          </a>
-          <a
-            href="https://www.instagram.com/nileshkant"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="menu-item icon iconinstagram"
-          >
-            <span />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/nilesh-kant-89878384"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="menu-item icon iconlinkedin"
-          >
-            <span />
-          </a>
+          {socialLink.map((links) => {
+            return (
+              <>
+                {links.icon && (
+                <a
+                  key={links.name}
+                  href={links.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn('menu-item', links.icon)}
+                >
+                  <span />
+                </a>
+                )}
+              </>
+            );
+          })}
         </menu>
 
       </div>

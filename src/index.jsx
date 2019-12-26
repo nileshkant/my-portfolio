@@ -3,12 +3,9 @@ import ReactDOM from 'react-dom';
 import './scss/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { ThemeProvider } from './theme-context';
 
 ReactDOM.render(
-  <ThemeProvider>
-    <App />
-  </ThemeProvider>,
+  <App />,
   document.getElementById('root')
 );
 
